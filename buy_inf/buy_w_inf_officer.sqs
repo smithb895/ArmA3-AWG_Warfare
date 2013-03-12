@@ -1,0 +1,8 @@
+_customer = _this select 1;
+
+?(isLocal==true):_customer=player;
+_customer=player;
+If (player distance w_barracks_1<10) then 
+{
+?((wmoney) >= 100):player4=player;wmoney=wmoney-100;_unit = group player4 createUnit ["B_Soldier_SL_F", position player4, [], 50, "FORM"];_unit setskill 1;player addScore 1;
+};

@@ -1,0 +1,64 @@
+==============================
+AWG Warfare v0.02
+Author: Anzu
+http://www.AnzusWarGames.info
+==============================
+To Add:
+-------
++Lockable vehicles ('locked' command changed?  Check in-game script help (F1) for info)
++Additional Objectives (Blow up radio towers, assassinate officers, etc)
++Playerslot AI automatic waypoints
++Save current loadout
++Town Capture Progress bar
++More places to buy gear/units from
++Buildable bases?
++Custom camera intro (AWG Evo v32CO)
++Custom intro music (AWG Evo)
++Parameters
+
+Tweak:
+------
++AI town patrol script (UPSMON ?)
++Prices?
++Team AI waypoints (should automatically set waypoint to nearest, uncaptured town)
++Better loading image
+
+Ideas:
+------
+*Rank-based Gear selection?  (see rank system from AWG Evo v32z)
+*Warfare Menus?
+*Implement some of the functions from TeeTime's Warfare (Create Unit, town captured, spawning defenses)
+
+
+DONE:
+-----
++Respawning ATVs/Trucks at bases
++Better gear boxes
++Recoded init.sqf
++Custom loading pic
++Civilian Resistance forces in towns
++Recoded town capture mechanism
++Town enemy spawn mechanism
++More enemies
++Engineer Repair Skill
+
+SNIPPETS:
+---------
+// Civilian Side: Civilian
+
+// Bases arrays. format: ["objectname", "purpose"]
+basesArrayBLUFOR = [
+	["w_light_1", "Buy Vehicles"],
+	["w_barracks_1", "Buy Soldiers"],
+	["w_af_1", "Buy Aircraft"]
+];
+basesArrayOPFOR = [
+	["e_light_1", "Buy Vehicles"],
+	["e_barracks_1", "Buy Soldiers"],
+	["e_AF_1", "Buy Aircraft"]
+];
+
+numBasesBLUFOR = count basesArrayBLUFOR;
+numBasesOPFOR = count basesArrayOPFOR;
+
+

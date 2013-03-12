@@ -1,0 +1,6 @@
+_customer = _this select 1;
+?(isLocal==true):_customer=player;
+
+If (player distance w_barracks_1<10) then 
+?((wmoney) >= 70):player4=player;wmoney=wmoney-70;_unit = group player4 createUnit ["B_medic_F", position player4, [], 50, "FORM"];_unit setskill 1;player addScore 1;
+};

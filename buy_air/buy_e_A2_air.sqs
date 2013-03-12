@@ -1,0 +1,8 @@
+_customer = _this select 1;
+?(isLocal==true):_customer=player;
+_customer=player;
+
+If (player distance e_af_1<10) then 
+{
+?((emoney) >= 10000):player4=player;emoney=emoney-10000;_veh = createVehicle ["O_Ka60_F", position player4, [], 10, "NONE"];player addScore 12;
+};

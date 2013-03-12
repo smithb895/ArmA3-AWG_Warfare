@@ -1,0 +1,14 @@
+_customer = _this select 1;
+?(isLocal==true):_customer=player;
+_customer=player;
+?(_customer == w_p_1): _nomerScheta = 1;
+?(_customer == w_p_2): _nomerScheta = 2;
+?(_customer == w_p_3): _nomerScheta = 3;
+?(_customer == e_p_1): _nomerScheta = 4;
+?(_customer == e_p_2): _nomerScheta = 5;
+?(_customer == e_p_3): _nomerScheta = 6;
+
+If (player distance w_Light_1<10) then 
+{
+?((wmoney) >= 300):player4=player;wmoney=wmoney-300;_veh = createVehicle ["B_Hunter_F", position player4, [], 12, "NONE"];player addScore 1;
+}

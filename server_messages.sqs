@@ -1,0 +1,22 @@
+#start
+_this globalChat "TIP: Press 0-0-1 to check money."
+~60
+_this globalChat "TIP: Capture towns to increase your income."
+~100
+_this globalChat "TIP: You can buy units at B, LF, and AF markers on your map (at the cash registers)."
+~500
+_this globalChat "TIP: YELLOW towns are uncaptured towns."
+~500
+_this globalChat "TIP: BLACK towns have EAST and WEST forces."
+~500
+_this globalChat "TIP: RED towns are captured by EAST forces."
+~500
+_this globalChat "TIP: BLUE towns are captured by WEST forces."
+~500
+_this globalChat "Please report cheaters and griefers on our forums in the Ban Requests section.  www.AnzusWarGames.info/forums"
+~500
+_this globalChat "No admin? Type '#vote kick PLAYERNAME', '#vote restart', '#vote admin' etc."
+~500
+_this globalChat "Bugs/Problems/Comments? Please let us know :) Check details in Notes on Map. Press M >> Notes"
+~1500
+goto "start"
